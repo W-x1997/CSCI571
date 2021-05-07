@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THE MOVIE DB</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script type="text/javascript" src="/static/js/index.js"></script>
+</head>
+<body onload="loadData()">
+    <div id="header">
+        THE MOVIE DB
+    </div>
+
+
+    
+
+    <div id="container">
+        <div id="left_part">
+            <button class="tab" id="home_tab" onclick="click_home()">&nbsp&nbsp&nbsp&nbspHome&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⟶</button>
+            <hr id="line1">
+            <button class="tab" id="search_tab" onclick="click_search()">&nbsp&nbsp&nbsp&nbspSearch&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⟶</button>
+            <hr id="line2">
+        </div>
+
+        <div id="right_part">
+           
+            
+                <div id="pop_div" class="pop_div">
+
+                <!-- <div id="pop_content">
+                    
+                    <div id="pic_poster">
+                        <img id="pop_img" src="https://image.tmdb.org/t/p/w780/5ZuctJh5uX5L2dz1CjA7WsTJwZk.jpg">
+                        <button id="btn_popdiv" onclick="close_popdiv()">x</button> 
+                    </div>
+                    
+
+                    <h2 class="pop_title">Doctor Strange  <a class="p_link" href="">ⓘ</a></h2>
+                    <h5>2008 | DramaAction, Thrill, Crime</h5>
+                    <h6 class="pop_score"><em>★3.7/5</em> &nbsp 2802 votes</h6>
+                    <p>
+                        Batman is a superhero who appears in American comic books published by DC Comics. 
+                        Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of 
+                        the comic book Detective Comics on March 30, 1939.
+                        Batman is a superhero who appears in American comic books published by DC Comics. 
+                        Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of 
+                        the comic book Detective Comics on March 30, 1939.
+                    </p>
+
+                    <p>Spoken languages: English, Madarin</p>
+
+                    <h3 class="cast_title">Cast</h3>
+
+                    <div id="cast_list">
+                        <div id="cast_1" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+
+                        <div id="cast_2" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+
+                        <div id="cast_3" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+
+                        <div id="cast_4" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+                        <div id="cast_5" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+                        <div id="cast_6" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+                        <div id="cast_7" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+                        <div id="cast_8" class="cast_item">
+                            <img class="cast_img" id="cast_1_img" src="https://image.tmdb.org/t/p/w185/fBEucxECxGLKVHBznO0qHtCGiMO.jpg">
+                            <h5 class="cast_name">Benedict Cumberbatch</h5>
+                            <h6 class="cast_as">AS</h6>
+                            <h6 class="cast_nickname">Steph Syrange/Doctor Sha...</h6>
+                        </div>
+                    </div>
+
+                    <h3 class="review_tag" >Reviews</h3>
+                    
+                    <div id="reviews_list">
+                        <div class="review_item">
+                            <h5 class="review_nickname"><strong>OresidentPutin</strong> on 02/20/2017</h5>  
+                            <h6 class="review_score"><em>★3.7/5</em></h6>
+                            <p class="review_p">
+                                I started watching when it came out as I heard that fans of LOTR also liked this. 
+                                I stopped watching after Season 1 as I was devastated lol kinda. 
+                                Only 2015 I decided to continue watching and got addicted like it seemed complicated 
+                                at first, too many stories and characters. I even used a guide from internet like 
+                                family tree per house while watching or GOT wiki so I can have more background on the 
+                                characters. For a TV series...
+                            </p>
+                            <hr class="review_hr">
+                        </div>
+
+                        <div class="review_item">
+                            <h5 class="review_nickname"><strong>OresidentPutin</strong> on 02/20/2017</h5>  
+                            <h6 class="review_score"><em>★3.7/5</em></h6>
+                            <p class="review_p">
+                                I started watching when it came out as I heard that fans of LOTR also liked this. 
+                                I stopped watching after Season 1 as I was devastated lol kinda. 
+                                Only 2015 I decided to continue watching and got addicted like it seemed complicated 
+                                at first, too many stories and characters. I even used a guide from internet like 
+                                family tree per house while watching or GOT wiki so I can have more background on the 
+                                characters. For a TV series...
+                            </p>
+                            <hr class="review_hr">
+                        </div>
+
+                        <div class="review_item">
+                            <h5 class="review_nickname"><strong>OresidentPutin</strong> on 02/20/2017</h5>  
+                            
+                            <p class="review_p">
+                                I started watching when it came out as I heard that fans of LOTR also liked this. 
+                                I stopped watching after Season 1 as I was devastated lol kinda. 
+                                Only 2015 I decided to continue watching and got addicted like it seemed complicated 
+                                at first, too many stories and characters. I even used a guide from internet like 
+                                family tree per house while watching or GOT wiki so I can have more background on the 
+                                characters. For a TV series...
+                            </p>
+                            <hr class="review_hr">
+                        </div>
+
+                        <div class="review_item">
+                            <h5 class="review_nickname"><strong>OresidentPutin</strong> on 02/20/2017</h5>  
+                            
+                            <p class="review_p">
+                                I started watching when it came out as I heard that fans of LOTR also liked this. 
+                                I stopped watching after Season 1 as I was devastated lol kinda. 
+                                Only 2015 I decided to continue watching and got addicted like it seemed complicated 
+                                at first, too many stories and characters. I even used a guide from internet like 
+                                family tree per house while watching or GOT wiki so I can have more background on the 
+                                characters. For a TV series...
+                            </p>
+                            <hr class="review_hr">
+                        </div>
+                        
+                
+                    </div>
+                    
+
+                    
+
+
+
+                </div> -->
+                </div>
+            
+            
+
+            <div id="content"> 
+                <div id="f1">
+                    <div id="movie_div">
+                        <h2>Trending Movies</h2>
+                        <div id="trending_show" class="pic">
+                            <img id="movie_img" src="/static/img/nofound.png">
+                            <div id="intro1" class="m_name">Loading</div>
+                        </div>
+
+                    </div>
+
+                    <div id="tv_div">
+                        <h2>TV Shows On-Air Today</h2>
+                        <div id="today_show" class="pic">
+                            <img id="tv_img" src="/static/img/nofound.png">
+                            <div id="intro2" class="m_name">Loading</div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+
+                <div id="f2">
+                    <div id="search">
+                        <h2>Search</h2>
+                        <form action="javascript:void(0)"  method="get" onsubmit="return hander_form(this)">
+                            Keyword<sup>*</sup>&nbsp&nbsp&nbsp<input type="text" name="keyword"> <br>
+                            <div id="cat">Category<sup>*</sup>&nbsp&nbsp&nbsp
+                                    <select name="type">
+                                    <option></option>
+                                    <option value="movie">Movies</option>
+                                    <option value="tv">TV Shows</option>
+                                    <option value="multi">Movies and TV Shows</option>
+                                    </select><br></div>
+                            <input class="btn" type="submit" value="Search">
+                            <input class="btn" type="reset" value="Clear">
+                        </form>
+
+                    </div>
+
+                    <div id="black_part">
+                        
+                    </div>
+
+                    <div id="no_result">No result found.</div>
+                    <div id="show_result">Showing results...</div>
+
+                    <div id="list">
+
+
+                        <!-- <div class="item">
+                            <img class="cover" src="/static/img/nofound.png">
+                            <div class="detail">
+                                <h4>The Dark Knight</h4>
+                                <h5>2008 | DramaAction, Thrill, Crime</h5>
+                                <h6><em>★4.25/5</em> &nbsp 2802 votes</h6>
+                                <p>
+                                    Batman is a superhero who appears in American comic books published by DC Comics. 
+                                    Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of 
+                                    the comic book Detective Comics on March 30, 1939.
+                                    Batman is a superhero who appears in American comic books published by DC Comics. 
+                                    Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of 
+                                    the comic book Detective Comics on March 30, 1939.
+                                </p>
+                                <button name="show_more_btn" class="show_more_btn">Show more</button>
+                            </div>
+                        </div> -->
+                      
+                        
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                Designed and developed by Xin Wei <br>
+                Powered by TMDB
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+</body>
+
+</html>

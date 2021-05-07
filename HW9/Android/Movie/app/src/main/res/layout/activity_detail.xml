@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/prog_layout_detail"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_marginTop="250dp"
+            android:id="@+id/progress_bar_detail"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:paddingTop="100dp"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="Loading..."/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/iv_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:visibility="gone"
+                />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="false" />
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:textSize="27dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="#1458A5"
+                android:text="Cherry"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:text="OverView"/>
+
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:layout_marginTop="5dp"
+
+                    android:textSize="17dp"
+                    android:id="@+id/tv_detail_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    app:trimLength="170"
+                    app:trimMode="trimModeLength"
+                    app:colorClickableText="#605E5E"
+                    android:text="A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy."/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:text="Genres"/>
+
+                <TextView
+                    android:textSize="17dp"
+
+                    android:id="@+id/tv_detail_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Action, Adventure, Fantasy, Science Fiction"
+                    />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:layout_marginTop="5dp"
+                    android:text="Year"/>
+
+                <TextView
+                    android:textSize="17dp"
+                    android:id="@+id/tv_detail_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="2021"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_detail_add"
+                        android:layout_width="30dp"
+                        android:background="@drawable/ic_baseline_add_circle_outline_24"
+                        android:layout_height="30dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_detail_fb"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ic_baseline_facebook_24"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_detail_twitter"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ic_twitter_logo_dialog"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_cast_tag"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:text="Cast"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/recycle_cast"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"/>
+
+                <TextView
+                    android:id="@+id/tv_review_tag"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:text="Reviews"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_detail_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="22dp"
+
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1458A5"
+                    android:text="Recommended Picks"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

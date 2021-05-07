@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:padding="5dp"
+
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/search_item_view"
+        android:layout_width="380dp"
+        android:background="@color/bgcolor"
+
+        android:layout_height="150dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_type_year"
+                android:textSize="15dp"
+                android:text="MOVIE(2021)"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="200dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D8C30A"
+                android:text="★"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="3.7"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:text="CAPTIN AERICAN CVIL WAR"
+            />
+    </LinearLayout>
+
+</LinearLayout>

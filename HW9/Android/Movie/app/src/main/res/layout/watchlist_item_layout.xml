@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_watchlist_item"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/black_shadow"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_watchlist_type"
+        android:layout_marginTop="185dp"
+        android:text="TV"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/remove_view"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="95dp"
+        android:background="@drawable/ic_baseline_remove_circle_outline_24" />
+
+</RelativeLayout>

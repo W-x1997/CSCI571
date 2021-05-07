@@ -10,8 +10,8 @@
 |---|---|---|---|
 |HW3|Imitate a static web page - hosted using **Github Pages**|HTML, CSS|[HW 3](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW3/Description.pdf)|
 |HW6|Flask web app - hosted using **Azure**|Python, Flask, HTML, CSS, JavaScript, DOM, JSON, XMLHttpRequest, Azure, TMDB API|[HW 6](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW6/HW6.pdf)|
-|HW8|Getting familiar with angular components - web page for TMDB API - hosted using **Google App Engine**|GAE, NodeJS, Express, Angular, Bootstrap, AJAX, localStorage API, TMDB API|[HW 8](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW8/HW8.pdf)|
-|HW9|USC Films Android App - hosted using **Google App Engine**|Java, Android SDK, JSON, Android Lifecycle, sharedPreferencs, GAE|[HW 9](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW9/Android/HW9_Android.pdf)|
+|HW8|Getting familiar with Angular components - web page for TMDB API - hosted using **Google App Engine**|GAE, NodeJS, Express, Angular, Bootstrap, AJAX, localStorage API, TMDB API|[HW 8](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW8/HW8.pdf)|
+|HW9|USC Films Android App - hosted using **Google App Engine**|Java, Android SDK, JSON, Android Lifecycle, Shared Preferences, Picasso, Glide, Volley, GAE or AWS EC2|[HW 9](https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW9/Android/HW9_Android.pdf)|
 
 ## Projects Link:
 
@@ -25,16 +25,16 @@
 
 <p float="left">
 
-<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img1.png" width=200>
-<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img2.png" width=200>
-<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img3.png" width=200>
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img1.png" width=200 height=300 >
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img2.png" width=200 height=300 >
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img3.png" width=200 height=300 >
 
 </p>
 
 <p float="left">
   
-<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img4.png" width=200>
-<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img5.png" width=200>
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img4.png" width=200 height=300 >
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img5.png" width=200 height=300 >
 
 </p>
 

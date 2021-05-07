@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <TextView
+        android:id="@+id/tv_watchlist_nodata"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Nothing saved to Watchlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_watchlist"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
