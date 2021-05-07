@@ -25,9 +25,9 @@
 
 <p float="left">
 
-<img src="https://github.com//W-x1997/CSCI571/IMG/img1.png" width=200>
-<img src="https://github.com//W-x1997/CSCI571/IMG/img2.png" width=200>
-<img src="https://github.com//W-x1997/CSCI571/IMG/img3.png" width=200>
+<img src="https://raw.githubusercontent.com/W-x1997/CSCI571/main/IMG/img1.png" width=200>
+<img src="https://github.com/W-x1997/CSCI571/IMG/img2.png" width=200>
+<img src="https://github.com/W-x1997/CSCI571/IMG/img3.png" width=200>
 
 </p>
 
