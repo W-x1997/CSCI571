@@ -1,0 +1,27 @@
+<div id="no_items" class="container">
+  <h1>No items found in Watchlist.</h1>
+</div>
+
+
+<div id="mylist_div" class="container">
+
+      <h1 id="title_watchlist">My WatchList</h1>
+
+      <div class="row boxlayout" >   
+        <div id="item_div" class="poster col-lg-2 " *ngFor="let item of items_list">
+          <a [routerLink]=" '../watch/' + item['type'] + '/' + item['id']"  >
+            <div class="picsum-img-wrapper">
+              <img [src]="item['poster_path']" >
+            </div> 
+          </a>   
+
+          <div class="intro carousel-caption ">
+            <h5>{{item['title']}}</h5>
+          </div>    
+        </div>
+
+      </div>
+
+      
+      
+</div>

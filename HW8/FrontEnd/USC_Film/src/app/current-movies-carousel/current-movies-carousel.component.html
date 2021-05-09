@@ -1,0 +1,17 @@
+<div class="cur_movie">
+<ngb-carousel >
+  <ng-template ngbSlide *ngFor="let item of items">
+    <div class="intro carousel-caption ">
+      <h3>{{item['title']}}</h3>
+    </div>
+    <a [routerLink]=" 'watch/movie/' + item['id']"  >
+      <div class="picsum-img-wrapper">
+        <img class="w-100" [src]="item['poster_path']" >
+      </div>
+    </a>
+  </ng-template>
+
+  
+</ngb-carousel>
+
+</div>

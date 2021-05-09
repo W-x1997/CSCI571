@@ -1,0 +1,48 @@
+
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 3%;
+}
+
+.intro {
+    text-align: left;
+    display: none;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+
+
+img { 
+    height: 400px;
+    object-fit:fill;
+}
+
+.cur_movie:hover .intro {
+    left:0%;
+    text-align: left;
+    display: block;
+    background-color: black;
+    margin-bottom: -20px;  
+   
+}
+
+.cur_movie:hover {
+    /* transform: scale(1); */
+    position: relative;
+    top:-20px;
+    transition: all 0.5s;
+   
+}
+
+
+
+.cur_movie {
+    margin-top: 3%;
+}
+
+:host ::ng-deep.carousel {
+    outline:none;
+}

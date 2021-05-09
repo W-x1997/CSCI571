@@ -1,0 +1,128 @@
+<div id="root" class="container">
+
+  <!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
+src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+frameborder="0"></iframe>
+ -->
+ 
+  <div class="row" id="detail_div">
+      <div id="video" class="col-lg-7 col-sm-12">
+          <youtube-player 
+              videoId="{{video_key}}" 
+              suggestedQuality="highres"       
+           >      
+          </youtube-player>
+      </div>
+
+      <div id="detail" class="col-lg-5 col-sm-12">
+          <h1>{{title}}</h1>
+          <p id="tagline" *ngIf="tagline">{{tagline}}</p>
+          <p id="year_rate_duration">{{year}} &nbsp; | &nbsp;★ {{avg_votes}} &nbsp;|&nbsp; {{duration}} </p>
+          <p id="genres"><span>Genres: &nbsp;</span>{{genres}}</p>
+          <p id="language"><span>Spoken Languages: &nbsp;</span>{{language}}</p>
+          
+          <button id="btn_add_list" (click)="add_to_list()" class="btn btn-primary">Add to Watchlist</button>
+
+          <div id="alert">
+            <ngb-alert id="add_alert" type="success">Added to watchlist.</ngb-alert>
+            <ngb-alert id="remove_alert" type="danger">Removed from watchlist.</ngb-alert>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div id="description">
+      <h5>Description</h5>
+      <p id="overview">{{overview}}</p>
+  </div>
+
+  <div id="share">
+      <h5>Share</h5>
+  
+      <a id="twitter" class="twitter-share-button "  target="_blank" href={{twitter_link}}> <i class="fa fa-twitter fa-2x"> </i></a>
+      <a id="fb" class="fb-share-button" target="_blank" href={{fb_link}} data-layout="button_count"> <i class="	fa fa-facebook-official fa-2x " > </i></a>
+
+  </div>
+
+  <div id="cast_div">
+      <h2>Full Cast and Crew</h2>
+
+      <div class="container">
+          <div id="cast_list" class="row flex-row flex-nowrap card-deck">
+              <div class="col-lg-2 col-sm-6" *ngFor="let cast of casts" (click)="openModal(cast.id)">
+                  <div class="card card-block" >
+                      <img id="cast_img" class="card-img-top" src={{cast.profile_path}} alt="Card image cap">
+                      <div id="cast_intro" class="card-body">
+                          <h5 id="cast_title" class="card-title">{{cast.name}}</h5>
+                          <h5 id="cast_as" class="card-title">AS</h5>
+                          <p id="cast_name" class="card-text">{{cast.character}}</p>
+                          
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+
+
+  <div id="reviews_div">
+      <h2>Reviews <strong>{{len_of_reviews}}</strong> </h2>
+
+      <div id="review-item" *ngFor="let review of reviews">
+          <div class="row">
+              
+              <img id="review_img" src={{review.avatar_path}} >
+              
+
+              <div id="review_detail" class="col-8">
+                  <h3 id="review_title">A review created by {{review.author}} &nbsp;&nbsp;<strong id="review_rate">&nbsp;&nbsp;★{{review.rating}}&nbsp;&nbsp;</strong></h3>   
+                  <p id="review_intro">Written by {{review.author}} on {{getMonth(review.created_at.substring(5,7))}} {{getDay(review.created_at.substring(8,10))}},  {{review.created_at.substring(0,4)}}, {{getTime(review.created_at.substring(11,19))}} </p>
+                  <p id="review_content">
+                      {{review.content}}
+                  </p>
+                  <a id="review_rest"  target="_blank" href={{review.url}} >Read the rest</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- <div id="review-item">
+          <div class="row">
+              
+              <img id="review_img" src="https://image.tmdb.org/t/p/original/klZ9hebmc8biG1RC4WmzNFnciJN.jpg" >
+              
+
+              <div id="review_detail" class="col-8">
+                  <h3 id="review_title">A review created by SWITCH. &nbsp;&nbsp;<strong id="review_rate">&nbsp;&nbsp;★7&nbsp;&nbsp;</strong></h3>   
+                  <p id="review_intro">Written by SWITCH.a on March7, 2021, 6:20:27 PM</p>
+                  <p id="review_content">
+                      It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie.
+                     It isn't as easy as saying 'Wonder Woman 1984t as easy as saying 'Wonder Woman 1984t as easy as saying 'Wonder Woman 1984
+                     It isn't as easy as saying 'Wonder Woman 1984' is a good or bad movie.
+                     It isn't as easy as saying 'Wonder Woman 1984t as easy as saying 'Wonder Woman 1984t as easy as saying 'Wonder Woman 1984
+                     
+                  </p>
+                  <a id="review_rest">Read the rest</a>
+              </div>
+          </div>
+      </div> -->
+  
+  </div>
+
+  <div class="carsouel_list">
+
+      <div id="carsouel_recommend">
+          <app-carsouel-template-tv   [title]="recommend_carsouel_title" [data]="recommend_carsouel_data" *ngIf="recommend_carsouel_data != null && recommend_carsouel_data.length > 0"></app-carsouel-template-tv>
+      </div>
+  
+      <div id="carsouel_similar">
+          <app-carsouel-template-tv [title]="similar_carsouel_title" [data]="similar_carsouel_data" *ngIf="similar_carsouel_data != null && similar_carsouel_data.length > 0"></app-carsouel-template-tv>
+      </div>
+
+  </div>
+  
+
+
+</div>
